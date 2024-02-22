@@ -1,0 +1,32 @@
+<%-include('header') %>
+    <main class="container border p-md-5 p-6" style="margin-top: 10px;">
+        
+        <div class="row g-5 g-md-4">
+            <div class="col-6 col-md-6 g-5">
+                <div class="row">
+                    <div class="card border-dark" >
+                        <img class="img-top" src="<%=data.Vapehascategory.img %>" alt="Card image cap">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 g-5">
+                <div class="row">
+                    <div class="card border-dark" >
+                        <h3><div class="header" style="text-align: center;"><b><%=data.Vapehascategory.name %></b>  </div></h3>
+                        <div class="body text-grey">
+                            <h5 class="card-title">Merk    : <b><%=data.Vapehascategory.merk %></b></h5>
+                            <p class="card-text">Desc : <%=data.Vapehascategory.desc %></p>
+                            <p class="card-text">Price : <%=data.harga %></p>
+                            <p class="card-text"> Stock: <%=data.stock %></p>
+                        </div>
+                        <br>
+                        <a href="" class="btn btn-outline-success" type="button"><b> Buy</b></a>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <%-include('footer') %>
